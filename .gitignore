@@ -1,5 +1,9 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+*.pyc
+./code/trainer_multi.py
+./code/trainer_single.py
+./code/trainer_srgan.py
+./code/init_gpu_interactive.sh
+./code/qrsh_reserve.sh
+./code/results_texture/*
+*__pycache__
+./experiment/*
