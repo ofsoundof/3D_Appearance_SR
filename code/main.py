@@ -5,7 +5,6 @@ import data
 import model
 import loss
 from option import args
-from trainer_multi import Trainer
 from trainer_finetune import TrainerFT
 
 torch.manual_seed(args.seed)
@@ -16,10 +15,7 @@ if checkpoint.ok:
     model = model.Model(args, checkpoint)
     # from IPython import embed; embed(); exit()
     loss = loss.Loss(args, checkpoint) if not args.test_only else None
-    if args.model.lower() == 'finetune':
-        t = TrainerFT(args, loader, model, loss, checkpoint)
-    else:
-        t = Trainer(args, loader, model, loss, checkpoint)
+    t = TrainerFT(args, loader, model, loss, checkpoint)
     while not t.terminate():
         t.train()
         t.test()

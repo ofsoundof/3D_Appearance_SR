@@ -19,7 +19,9 @@ parser.add_argument('--seed', type=int, default=1,
                     help='random seed')
 
 # Data specifications
-parser.add_argument('--dir_data', type=str, default='/scratch_net/ofsoundof/yawli/Datasets',
+parser.add_argument('--dir', type=str, default='/scratch_net/ofsoundof/yawli/logs_3d/',
+                    help='log directory')
+parser.add_argument('--dir_data', type=str, default='/scratch_net/ofsoundof/yawli/Datasets/',
                     help='dataset directory')
 parser.add_argument('--dir_demo', type=str, default='../test',
                     help='demo image directory')

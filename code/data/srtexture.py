@@ -122,10 +122,10 @@ class SRData(data.Dataset):
         lr, hr = common.set_channel([lr, hr], self.args.n_colors)
         #print('The size of lr, hr images are {}, {}'.format(lr.shape, hr.shape))
         lr_tensor, nl_tensor, mk_tensor, hr_tensor = common.np2Tensor([lr, nl, mk, hr], self.args.rgb_range)
-        if self.model_flag.lower() == 'finetune':
-            return lr_tensor, nl_tensor, mk_tensor, hr_tensor, filename
-        else:
-            return lr_tensor, hr_tensor, filename
+        # if self.model_flag.lower() == 'finetune':
+        return lr_tensor, nl_tensor, mk_tensor, hr_tensor, filename
+        # else:
+        #     return lr_tensor, hr_tensor, filename
 
     def __len__(self):
         return len(self.images_hr)
@@ -136,7 +136,7 @@ class SRData(data.Dataset):
     def _load_file(self, idx):
         idx = self._get_index(idx)
         # from IPython import embed; embed()
-        #print('The hr images are {}'.format(self.images_hr))
+        # print('The hr images are {}'.format(self.images_hr))
         lr = self.images_lr[self.idx_scale][idx]
         nl = self.normals_lr[self.idx_scale][idx]
         mk = self.masks_lr[self.idx_scale][idx]

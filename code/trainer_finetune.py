@@ -24,7 +24,8 @@ class TrainerFT(Trainer):
         # self.loader_test = loader.loader_test
         # self.model = my_model
         # self.loss = my_loss
-        self.optimizer = self.make_optimizer(args, self.model)
+        if self.args.model.lower() == 'finetune':
+            self.optimizer = self.make_optimizer(args, self.model)
         # self.scheduler = utility.make_scheduler(args, self.optimizer)
         #
         # if self.args.load != '.':
@@ -94,8 +95,8 @@ class TrainerFT(Trainer):
                 self.loader_test.dataset.set_scale(idx_scale)
                 tqdm_test = tqdm(self.loader_test, ncols=80)
                 for idx_img, (lr, nl, mk, hr, filename, _) in enumerate(tqdm_test):
-                    print('FLAG')
-                    print(filename)
+                    # print('FLAG')
+                    # print(filename)
                     filename = filename[0]
                     print(filename)
                     no_eval = (hr.nelement() == 1)
@@ -106,7 +107,7 @@ class TrainerFT(Trainer):
 
                     sr = self.model(idx_scale, lr, nl, mk)
                     sr = utility.quantize(sr, self.args.rgb_range)
-                    print(sr.shape)
+                    # print(sr.shape)
                     b, c, h, w = sr.shape
                     hr = hr[:, :, :h, :w]
                     save_list = [sr]

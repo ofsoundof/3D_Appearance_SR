@@ -19,7 +19,8 @@ class texture(srtexture.SRData):
         if self.subset == '.':
             self.num_all = 24
             self.num_split = 12
-            self.repeat = args.test_every // (self.num_split // args.batch_size)
+            if train:
+                self.repeat = args.test_every // (self.num_split // args.batch_size)
         else:
             self.num_all = self.all[self.subset_idx[0]]
             if (self.train and self.model_one) or (not self.train and not self.model_one):
@@ -48,15 +49,16 @@ class texture(srtexture.SRData):
         for si, s in enumerate(self.scale):
             list_lr[si] = [n.replace('x1', 'x{}'.format(s)) for n in list_hr]
             if self.normal_lr:
-                list_lr_normal[si] = [n.replace('x1', 'x{}'.format(s)).replace('Texture', 'normal') for n in list_hr]
+                # from IPython import embed; embed(); exit()
+                list_lr_normal[si] = [n.replace('x1', 'x{}'.format(s)).replace('Texture/', 'normal/').replace('Texture.png', 'normal.png') for n in list_hr]
             else:
-                list_lr_normal[si] = [n.replace('Texture', 'normal') for n in list_hr]
-            list_lr_mask[si] = [n.replace('x1', 'x{}'.format(s)).replace('Texture', 'mask') for n in list_hr]
+                list_lr_normal[si] = [n.replace('Texture/', 'normal/').replace('Texture.png', 'normal.png') for n in list_hr]
+            list_lr_mask[si] = [n.replace('x1', 'x{}'.format(s)).replace('Texture/', 'mask/').replace('Texture.png', 'mask.png') for n in list_hr]
         # from IPython import embed; embed(); exit()
         return list_hr, list_lr, list_lr_normal, list_lr_mask
 
     def _set_filesystem(self, dir_data):
-        self.apath = dir_data + '/texture_map'
+        self.apath = dir_data + 'Texture_map'
         self.set = ['MiddleBury', 'ETH3D', 'Collection', 'SyB3R']
         self.ext = '.png'
         self.split = [1, 6, 3, 2] #[1, 7, 3, 1]

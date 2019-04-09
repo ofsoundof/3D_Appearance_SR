@@ -48,9 +48,9 @@ class checkpoint():
 
         if args.load == '.':
             if args.save == '.': args.save = now
-            self.dir = '/scratch_net/ofsoundof/yawli/conadp/' + args.save
+            self.dir = args.dir + args.save
         else:
-            self.dir = '/scratch_net/ofsoundof/yawli/conadp/' + args.load
+            self.dir = args.dir + args.load
             if not os.path.exists(self.dir):
                 args.load = '.'
             else:
