@@ -47,7 +47,7 @@ We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based app
 # BibTeX
 If you find our work useful in your research or publication, please cite our work:
 
-Yawei Li , Vagia Tsiminaki, Radu Timofte, Marc Pollefeys, and Luc van Gool, "**3D Appearance Super-Resolution with Deep Learning**", In In *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition*, 2019. 
+Yawei Li , Vagia Tsiminaki, Radu Timofte, Marc Pollefeys, and Luc van Gool, "**3D Appearance Super-Resolution with Deep Learning**" In *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition*, 2019. 
 
     @inproceedings{li2019_3dappearance,
       title={3D Appearance Super-Resolution with Deep Learning},
