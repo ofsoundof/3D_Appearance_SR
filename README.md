@@ -6,6 +6,14 @@ We provided 3DASR, a 3D appearance SR dataset that captures both synthetic and r
 
 [contribution]: ./code/scripts/contribution.jpg "Logo Title Text 2"
 
+![alt text][nlr]
+
+[nlr]: ./code/scripts/network_NHR.png "Logo Title Text 2"
+
+![alt text][nhr]
+
+[nhr]: ./code/scripts/network_NHR.png "Logo Title Text 2"
+
 
 # Dependencies
 * Python 3.6
