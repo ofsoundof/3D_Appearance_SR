@@ -4,7 +4,7 @@
 
 2. Download the pretrained EDSR model from [EDSR project page](https://github.com/thstkdgus35/EDSR-PyTorch).
 
-3. Put the pretrained model at ./experiment
+3. Put the pretrained model at [./experiment](./experiment).
 
 ## Prepare dataset
 For fast use of the code, please refer to [demo.sh](./code/scripts/demo.sh). In a batch system, you can also use [qsub_NLR.sh](./code/scripts/qsub_NLR.sh).
