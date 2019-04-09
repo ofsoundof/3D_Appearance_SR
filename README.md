@@ -5,7 +5,7 @@ We provided 3DASR, a 3D appearance SR dataset that captures both synthetic and r
 ![alt text][contribution]
 
 [contribution]: ./code/scripts/contribution.jpg "We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based approach to super-resolve the appearance of 3D objects."
-
+We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based approach to super-resolve the appearance of 3D objects.
 
 
 # Dependencies
