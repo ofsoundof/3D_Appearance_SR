@@ -1,4 +1,4 @@
-This is the official website of our work [3D Appearance Super-Resolution with Deep Learning](./code/scripts/3d_appearance_sr.pdf) published on CVPR2019.
+This is the official website of our work [3D Appearance Super-Resolution with Deep Learning](./code/scripts/3d_appearance_sr.pdf) [(arxiv)](https://arxiv.org/abs/1906.00925) published on CVPR2019.
 
 We provided 3DASR, a 3D appearance SR dataset that captures both synthetic and real scenes with a large variety of texture characteristics. The dataset contains ground truth HR texture maps and LR texture maps of scaling factors ×2, ×3, and ×4. The 3D mesh, multi-view images, projection matrices, and normal maps are also provided. We introduced a deep learning-based SR framework in the multi-view setting. We showed that 2D deep learning-based SR techniques can successfully be adapted to the new texture domain by introducing the geometric information via normal maps.
 
