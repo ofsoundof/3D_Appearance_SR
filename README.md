@@ -1,4 +1,4 @@
-We received best **post prize** at [ICVSS 2019](https://iplab.dmi.unict.it/icvss2019/PresentationPrize). 
+We received **post prize** at [ICVSS 2019](https://iplab.dmi.unict.it/icvss2019/PresentationPrize). 
 
 This is the official website of our work [3D Appearance Super-Resolution with Deep Learning](./code/scripts/3d_appearance_sr.pdf) [(arxiv)](https://arxiv.org/abs/1906.00925) published on CVPR2019.
 
