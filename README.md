@@ -40,7 +40,7 @@ We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based app
 3. Put the pretrained model at [`./experiment`](./experiment).
 
 ## Prepare dataset
-1. Download the [texture map](https://drive.google.com/file/d/18rHsefdYNSEG7QMwzaS8iFHIdLOB2eND/view?usp=sharing) of the proposed 3D appearance dataset.
+1. Download the texture map of the 3D appearance dataset from [Google Drive](https://drive.google.com/file/d/18rHsefdYNSEG7QMwzaS8iFHIdLOB2eND/view?usp=sharing) or [BaiduNetDisk, extraction code: crnw](https://pan.baidu.com/s/1U-bnnG6LjOVtHqX3fMCq2w).
 
 ## Train and test
 1. Please refer to [`demo.sh`](./code/scripts/demo.sh) for the training and testing demo script. In a batch system, you can also use [`qsub_NLR.sh`](./code/scripts/qsub_NLR.sh).
