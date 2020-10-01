@@ -10,7 +10,7 @@ We provided 3DASR, a 3D appearance SR dataset that captures both synthetic and r
 We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based approach to super-resolve the appearance of 3D objects.
 
 
-# Dependencies
+# Dependencies #This libraries Must be Installed.
 * Python 3.6
 * PyTorch >= 1.0.0
 * numpy
