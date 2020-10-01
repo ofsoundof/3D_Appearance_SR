@@ -1,4 +1,4 @@
-#3D_APPEARANCE_SR
+## 3D_APPEARANCE_SR
 
 We received **Best Poster Prize** at [ICVSS 2019](https://iplab.dmi.unict.it/icvss2019/PresentationPrize). 
 
