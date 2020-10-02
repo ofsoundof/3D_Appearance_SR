@@ -1,4 +1,4 @@
-We received **Best Poster Prize** at [ICVSS 2019](https://iplab.dmi.unict.it/icvss2019/PresentationPrize). 
+We received the **Best Poster Prize** at [ICVSS 2019](https://iplab.dmi.unict.it/icvss2019/PresentationPrize). 
 
 This is the official website of our work [3D Appearance Super-Resolution with Deep Learning](./code/scripts/3d_appearance_sr.pdf) [(arxiv)](https://arxiv.org/abs/1906.00925) published on CVPR2019.
 
@@ -10,7 +10,7 @@ We provided 3DASR, a 3D appearance SR dataset that captures both synthetic and r
 We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based approach to super-resolve the appearance of 3D objects.
 
 
-# Dependencies
+# DEPENDENCIES
 * Python 3.6
 * PyTorch >= 1.0.0
 * numpy
@@ -19,7 +19,7 @@ We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based app
 * matplotlib
 * tqdm
 
-# Quick Start (Test)
+# QUICK START (TEST)
 1. `git clone https://github.com/ofsoundof/3D_Appearance_SR.git`
 2. Download pretrained model and texture map dataset.
 3. Put pretrained model at [`./experiment/`](./experiment).
@@ -31,22 +31,22 @@ We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based app
    
    Be sure to change log directory `--dir` and data directory `--dir_data`.
    
-# How to Run the Code
-## Prepare pretrained model
+# HOW TO RUN THE CODE
+## PREPATE A PRETRAINED MODEL
 1. Download our pretrained model for 3D appearance SR from [google drive](https://drive.google.com/file/d/1TaBua-A0DT0jc4x_I4HVFicKOndzSBxU/view?usp=sharing) or [BaiduNetDisk, extraction code: nnnm](https://pan.baidu.com/s/1-_yozGa3QMMe0TRIUg5WBw). The pretrained models of NLR and NHR in the paper are included.
 
 2. Download the pretrained EDSR model from [EDSR project page](https://github.com/thstkdgus35/EDSR-PyTorch).
 
 3. Put the pretrained model at [`./experiment`](./experiment).
 
-## Prepare dataset
+## PREPARE A DATASET
 1. Download the texture map of the 3D appearance dataset from [Google Drive](https://drive.google.com/file/d/18rHsefdYNSEG7QMwzaS8iFHIdLOB2eND/view?usp=sharing) or [BaiduNetDisk, extraction code: crnw](https://pan.baidu.com/s/1U-bnnG6LjOVtHqX3fMCq2w).
 
-## Train and test
+## TRAIN AND TEST
 1. Please refer to [`demo.sh`](./code/scripts/demo.sh) for the training and testing demo script. In a batch system, you can also use [`qsub_NLR.sh`](./code/scripts/qsub_NLR.sh).
 2. Remember to change the log directory `--dir` and data directory `--dir_data`. `--dir` is the directory where you put your log information and the trained model. `--dir_data` is the directory where you put the dataset.
 
-# BibTeX
+# BIBTEX
 If you find our work useful in your research or publication, please cite our work:
 
 Yawei Li , Vagia Tsiminaki, Radu Timofte, Marc Pollefeys, and Luc van Gool, "**3D Appearance Super-Resolution with Deep Learning**" In *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition*, 2019. 
