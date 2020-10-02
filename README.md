@@ -9,6 +9,8 @@ We provided 3DASR, a 3D appearance SR dataset that captures both synthetic and r
 [contribution]: ./code/scripts/contribution.jpg "We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based approach to super-resolve the appearance of 3D objects."
 We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based approach to super-resolve the appearance of 3D objects.
 
+Also Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse.
+
 
 # Dependencies
 * Python 3.6
