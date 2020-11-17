@@ -22,7 +22,7 @@ We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based app
 # Quick Start (Test)
 1. `git clone https://github.com/ofsoundof/3D_Appearance_SR.git`
 2. Download pretrained model and texture map dataset.
-3. Put pretrained model at [`./experiment/`](./experiment).
+3. Put pretrained model at this website ➡ [`./experiment/`](./experiment).
 4. `cd ./code/script`
    
       `CUDA_VISIBLE_DEVICES=xx python ../main.py --model FINETUNE --submodel NLR --save Test/NLR_first --scale 4 --n_resblocks 32 --n_feats 256 --res_scale 0.1 --pre_train ../../experiment/model/NLR/model_x2_split1.pt  --data_train texture --data_test texture --model_one one --subset . --normal_lr lr --input_res lr --chop --reset --save_results --print_model --test_only`
@@ -44,7 +44,7 @@ We introduce the 3DASR, a 3D appearance SR dataset and a deep learning-based app
 
 ## Train and test
 1. Please refer to [`demo.sh`](./code/scripts/demo.sh) for the training and testing demo script. In a batch system, you can also use [`qsub_NLR.sh`](./code/scripts/qsub_NLR.sh).
-2. Remember to change the log directory `--dir` and data directory `--dir_data`. `--dir` is the directory where you put your log information and the trained model. `--dir_data` is the directory where you put the dataset.
+2. Remember to change the log directory `--dir` and data directory `--dir_data`. `--dir` is the directory where you can put your log information and the trained model. `--dir_data` is the directory where you put the dataset.
 
 # BibTeX
 If you find our work useful in your research or publication, please cite our work:
